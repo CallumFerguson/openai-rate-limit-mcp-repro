@@ -1,0 +1,18 @@
+{
+  "name": "openai-rate-limit-mcp-repro",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "description": "Minimal OpenAI Responses API + MCP echo repro for rate-limit debugging.",
+  "scripts": {
+    "debug": "node debug-openai-rate-limits.mjs",
+    "mcp": "node mcp-echo-server.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "openai": "^6.34.0",
+    "zod": "^4.3.6"
+  }
+}
